@@ -17,6 +17,12 @@
   font-size: large;
 }
 
+.cards {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
 .card {
-  display: inline-block;
+  margin: 0 auto;
 }
