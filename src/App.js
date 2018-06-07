@@ -20,12 +20,12 @@ class App extends Component {
           const elements = [];
           for (let article in result.articles) {
             let card = result.articles[article]
-            let element = <div key={article} className="card" style={{width:'18rem'}}>
+            let element = <div key={article} className="card">
               <img className="card-img-top" src={card.urlToImage} alt={card.title} />
               <div className="card-body">
                 <h5 className="card-title">{card.title}</h5>
                 <p className="card-text">{card.description}</p>
-                <a href={card.url} className="btn btn-primary">Read more</a>
+                <a href={card.url} className="card-link">Read more</a>
               </div>
             </div>
 
@@ -49,7 +49,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Welcome to NewsLy</h1>
+          <h1 className="App-title">News<span>Ly</span></h1> 
         </header>
         <p className="App-intro">
         </p>

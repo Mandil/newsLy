@@ -4,9 +4,12 @@
 
 .App-header {
   background-color: #222;
-  height: 150px;
   padding: 20px;
   color: white;
+}
+
+.App-header span {
+  color: teal;
 }
 
 .App-title {
@@ -19,10 +22,8 @@
 
 .cards {
   width: 100vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2rem;
 }
 .card {
-  margin: 0 auto;
+  margin: 1rem;
+  max-height: 100vh
 }
